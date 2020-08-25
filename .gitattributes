@@ -1,0 +1,154 @@
+# https://help.github.com/articles/dealing-with-line-endings
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+# This is a windows project; so just make all files have CRLF endings.
+#* text eol=crlf
+
+# Explicitly declare text files we want to always be normalized and converted
+# to native line endings on checkout.
+*.c     text
+*.cs    text
+*.css   text
+*.csv   text
+*.h     text
+*.htm   text
+*.html  text
+*.java  text
+*.json  text
+*.kt    text
+*.lock  text
+*.md    text
+*.mht   text
+*.rs    text
+*.scss  text
+*.svg   text
+*.toml  text
+*.txt   text
+*.vb    text
+*.xhtml text
+*.xml   text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.ali         eol=crlf
+*.bas         eol=crlf
+*.bat         eol=crlf
+*.cls         eol=crlf
+*.config      eol=crlf
+*.csproj      eol=crlf
+*.Designer.cs eol=crlf
+*.frm         eol=crlf
+*.hhc         eol=crlf
+*.hhp         eol=crlf
+*.ini         eol=crlf
+*.isl         eol=crlf
+*.isproj      eol=crlf
+*.resx        eol=crlf
+*.settings    eol=crlf
+*.sln         eol=crlf
+*.vcproj      eol=crlf
+*.vcxproj     eol=crlf
+
+# Declare files that will always have LF line endings on checkout.
+*.js eol=lf
+*.sh eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.7z         binary
+*.accdb      binary
+*.accdr      binary
+*.aif        binary
+*.aiff       binary
+*.aps        binary
+*.atx        binary
+*.bin        binary
+*.bmp        binary
+*.bundle     binary
+*.bundlx     binary
+*.cache      binary
+*.chm        binary
+*.class      binary
+*.db         binary
+*.db-journal binary
+*.dgn        binary
+*.dll        binary
+*.eot        binary
+*.exe        binary
+*.freelist   binary
+*.frx        binary
+*.gdb        binary
+*.gdbindexes binary
+*.gdbtable   binary
+*.gdbtablx   binary
+*.gif        binary
+*.gz         binary
+*.gzip       binary
+*.ico        binary
+*.jar        binary
+*.jpg        binary
+*.m4a        binary
+*.mdb        binary
+*.mp3        binary
+*.mp4        binary
+*.mpa        binary
+*.mpp        binary
+*.msg        binary
+*.msi        binary
+*.mxd        binary
+*.nupkg      binary
+*.ogv        binary
+*.otf        binary
+*.pag        binary
+*.pages      binary
+*.pcm        binary
+*.pdb        binary
+*.pdf        binary
+*.pdn        binary
+*.png        binary
+*.ps         binary
+*.ps1        binary
+*.psd        binary
+*.pyc        binary
+*.rdlc       binary
+*.rpt        binary
+*.rtf        binary
+*.sde        binary
+*.snk        binary
+*.spx        binary
+*.sqlite3    binary
+*.suo        binary
+*.swf        binary
+*.swz        binary
+*.tar        binary
+*.ttf        binary
+*.vsix       binary
+*.war        binary
+*.wav        binary
+*.webm       binary
+*.wmv        binary
+*.woff       binary
+*.woff2      binary
+*.xla        binary
+*.xrc        binary
+*.zip        binary
+
+# MS Office pandoc & ReZip
+*.doc  binary
+*.docm binary
+*.docx binary
+*.pptm binary
+*.pptx binary
+*.vsd  binary
+*.vsdx binary
+*.xlam binary
+*.xls  binary
+*.xlsm binary
+*.xlsx binary
+
+# OpenOffice ReZip
+*.odp  binary
+*.ods  binary
+*.odt  binary
+# Misc ReZip
+*.mcdx binary
+*.slx  binary
