@@ -11,6 +11,7 @@
     }
 
     @include clearfix;
+
     // select where all the class starts with "col-" ^ is beginning, $ is end, * is contain
     [class^="col-"] {
         background-color: orangered;
