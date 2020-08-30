@@ -1,0 +1,47 @@
+.row {
+    // standard is 1140px
+    // max is better than width b/c if viewport is smaller will use 100 if smaller than 1140px
+    max-width: $grid-width;
+    background-color: #eee;
+    // trick for centering; the auto makes the browser calculate left and right
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+    // select where all the class starts with "col-" ^ is beginning, $ is end, * is contain
+    [class^="col-"] {
+        background-color: orangered;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - (2 * #{$gutter-horizontal})) / 3);
+    }
+
+    .col-2-of-3 {
+        width: calc(2* ((100% - (2 * #{$gutter-horizontal})) / 3) + #{$gutter-horizontal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - (3 * #{$gutter-horizontal})) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(2 * ((100% - (3 * #{$gutter-horizontal})) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - (3 * #{$gutter-horizontal})) / 4) + (2 * #{$gutter-horizontal}));
+    }
+}
