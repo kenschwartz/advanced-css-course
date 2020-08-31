@@ -476,3 +476,4 @@ FodyWeavers.xsd
 # End of https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 **/~$*
+Natours/starter/css/style.css

@@ -2,7 +2,6 @@
     // standard is 1140px
     // max is better than width b/c if viewport is smaller will use 100 if smaller than 1140px
     max-width: $grid-width;
-    background-color: #eee;
     // trick for centering; the auto makes the browser calculate left and right
     margin: 0 auto;
 
@@ -14,7 +13,6 @@
 
     // select where all the class starts with "col-" ^ is beginning, $ is end, * is contain
     [class^="col-"] {
-        background-color: orangered;
         float: left;
 
         &:not(:last-child) {
