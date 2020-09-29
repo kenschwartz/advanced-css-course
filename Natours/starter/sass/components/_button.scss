@@ -11,6 +11,19 @@
         font-size: $default-font-size;
     }
 
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; /* position, bc we want behind -1 forces it there */
+        transition: all 0.4s;
+    }
+
     &:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
@@ -42,19 +55,6 @@
         &::after {
             background-color: $color-white;
         }
-    }
-
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1; /* position, bc we want behind -1 forces it there */
-        transition: all 0.4s;
     }
 
     &-animated {

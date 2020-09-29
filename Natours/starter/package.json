@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "npm run compile:sass-1 && node-sass sass/main.scss css/style.css -w",
     "compile:sass-1": "npm run delete-css && node-sass sass/main.scss css/style.css",
-    "delete-css": "node js/delete-style-css.js"
+    "delete-css": "node js/delete-style-css.js",
+    "live-server": "live-server"
   },
   "author": "Ken Schwartz",
   "license": "ISC",
   "devDependencies": {
     "del": "^5.1.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.7.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

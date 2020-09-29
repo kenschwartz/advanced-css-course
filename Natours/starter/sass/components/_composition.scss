@@ -7,7 +7,7 @@
         border-radius: 2px;
         position: absolute;
         z-index: 10;
-        transition: all .2s;
+        transition: all 0.2s;
         outline-offset: 2rem;
 
         &--p1 {
@@ -17,7 +17,7 @@
 
         &--p2 {
             right: 0;
-            top: 2rem; 
+            top: 2rem;
         }
 
         &--p3 {
@@ -27,13 +27,13 @@
 
         &:hover {
             outline: 1.5rem solid $color-primary;
-            transform: scale(1.05) translate(-.5rem);
+            transform: scale(1.05) translate(-0.5rem);
             box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
             z-index: 20;
         }
     }
 
     &:hover &__photo:not(:hover) {
-        transform: scale(.95)
+        transform: scale(0.95, 0.95);
     }
 }
